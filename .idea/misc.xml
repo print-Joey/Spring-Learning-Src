@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/S1_IOC_QuickStart/pom.xml" />
+        <option value="$PROJECT_DIR$/S4_Bean_Lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/S5_DI_Set/pom.xml" />
+        <option value="$PROJECT_DIR$/S6_DI_Constructor/pom.xml" />
+        <option value="$PROJECT_DIR$/S7_Intro_autowire/pom.xml" />
+        <option value="$PROJECT_DIR$/S8_DI_Collection/pom.xml" />
+        <option value="$PROJECT_DIR$/S9_DataSource/pom.xml" />
+        <option value="$PROJECT_DIR$/S10_Container/pom.xml" />
+        <option value="$PROJECT_DIR$/S11_AnnotationBean/pom.xml" />
+        <option value="$PROJECT_DIR$/S12_AnnotationBeanManager/pom.xml" />
+        <option value="$PROJECT_DIR$/S13_AnnotationDI/pom.xml" />
+        <option value="$PROJECT_DIR$/S14_AnnotationThirdPartyBean/pom.xml" />
+        <option value="$PROJECT_DIR$/S14_AnnotationThirdPartyBeanManager/pom.xml" />
+        <option value="$PROJECT_DIR$/S15_Spring_MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/S16_Spring_JUnit/pom.xml" />
+        <option value="$PROJECT_DIR$/S18_AOP-QuickStart/pom.xml" />
+        <option value="$PROJECT_DIR$/S18_1_AOP-Workflow/pom.xml" />
+        <option value="$PROJECT_DIR$/S19_AOP-PointCutExpression/pom.xml" />
+        <option value="$PROJECT_DIR$/S20_AOPAdviceType/pom.xml" />
+        <option value="$PROJECT_DIR$/S21_AOP_Spring_MyBatis_Efficiency/pom.xml" />
+        <option value="$PROJECT_DIR$/S22_AOPAdviceGetData/pom.xml" />
+        <option value="$PROJECT_DIR$/S22_CaseStudy/pom.xml" />
+        <option value="$PROJECT_DIR$/S24_CsBankTransaction/pom.xml" />
+        <option value="$PROJECT_DIR$/S25_BankTransactionProperties/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

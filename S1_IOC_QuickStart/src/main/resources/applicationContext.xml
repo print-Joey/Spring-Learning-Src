@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--1.导入spring坐标-->
+
+<!--    2.配置bean-->
+<!--    bean标签用于配置bean-->
+<!--    id属性标签用于给bean起名字-->
+<!--    class属性给bean定义类型-->
+<!--    name属性给bean起别名-->
+<!--    scope属性给bean设置作用范围   prototype为多例 (getbean)多一个对象 (默认)>>singleton为单例 (~) 少一个对象-->
+
+<!--第一种:构造方法造对象-->
+    <bean id="bookDAO" name="dao" class="com.joey.dao.Imp.BookDAOImpl" scope="singleton"/>
+
+    <bean id="bookService" class="com.joey.service.Imp.BookServiceImpl">
+<!--配置server与dao的关系-->
+<!--        property标签表示配置当前bean的属性-->
+<!--        name标签表示bean里某个属性-->
+<!--        ref属性表示参照哪一个bean-->
+
+        <property name="bookDAO" ref="bookDAO"/>
+    </bean>
+<!--    第二种:静态工厂造对象-->
+<!--    可以先走一些配置  见 OrderDaoFactory-->
+    <bean id="OrderDao" class="com.joey.factory.OrderDaoFactory" factory-method="getOrderDao"/>
+
+<!--    第三种:使用实例工厂实例化bean (非静态)-->
+
+    <bean id = "userFactory" class="com.joey.factory.UserDaoFactory" />
+
+    <bean id = "userDao" factory-method="getUserDao" factory-bean="userFactory" />
+
+<!--    第四种: 使用factoryBean实例化Bean-->
+    <bean id="userDao1" class="com.joey.factory.UserDaoFactoryBean" />
+
+</beans>

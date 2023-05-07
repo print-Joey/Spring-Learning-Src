@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+        ">
+<!--    注解开发(新内容) 见BookDAOImpl  vs xml(旧内容) 见VVVVV-->
+<!--    <bean id="bookDao" class="com.joey.dao.Imp.BookDAOImpl" />-->
+
+<!--    注解开发定义component scan 告诉spring在哪找bean     -->
+    <context:component-scan base-package="com.joey"/>
+<!--    缩小范围-->
+<!--    <context:component-scan base-package="com.joey.dao.Imp"/>-->
+</beans>

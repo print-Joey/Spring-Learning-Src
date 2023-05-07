@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="java.lang.String"/>
+
+
+    <bean id="bookDAO"  class="com.joey.dao.Imp.BookDAOImpl" >
+<!--        Array注入-->
+        <property name="array_variableName">
+            <array>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+            </array>
+        </property>
+
+        <property name="list_variableName">
+            <list>
+                <value>itcast</value>
+                <value>joey</value>
+                <value>bob</value>
+            </list>
+        </property>
+        <property name="set_variableName">
+            <set>
+                <value>itcast</value>
+                <value>joey</value>
+                <value>bob</value>
+            </set>
+        </property>
+
+
+        <property name="map_variableName">
+            <map>
+                <entry key="username" value="root"></entry>
+                <entry key="pwd" value="abc123"></entry>
+            </map>
+        </property>
+
+        <property name="properties_variableName">
+            <props>
+                <prop key="username" >root</prop>
+                <prop key="pwd" >abc123</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>

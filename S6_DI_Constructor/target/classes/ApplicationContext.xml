@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDAO"  class="com.joey.dao.Imp.BookDAOImpl" >
+        <!--        构造器注入(基本数据类型)  Dependency injection by Constructor  Primitive variable-->
+        <constructor-arg name="connectionNum" value="10" />
+        <constructor-arg name="dataSource"  value="mysql"/>
+
+    </bean>
+
+
+
+    <bean id="userDao"  class="com.joey.dao.Imp.UserDaoImpl"/>
+
+
+
+
+
+    <bean id="bookService" class="com.joey.service.Imp.BookServiceImpl">
+<!--        构造器注入(引用数据类型 Dependency injection by Constructor  Reference variable-->
+        <constructor-arg name="bookDAO" ref="bookDAO"/>
+        <constructor-arg name="userDao" ref="userDao"/>
+
+    </bean>
+
+
+</beans>

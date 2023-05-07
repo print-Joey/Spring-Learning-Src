@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--       9.2定义context命名空间 Step1:   xmlns:context="http://www.springframework.org/schema/context"-->
+<!--Step2:       http://www.springframework.org/schema/context-->
+<!--        http://www.springframework.org/schema/context/spring-beans.xsd-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+        ">
+
+
+
+<!--    //lazy-init 属性示例-->
+
+<!--    设置lazy-init=false后, ApplicationContext加载时,BookDAOImp的构造器会调用-->
+<!--    设置lazy-init=true后, ApplicationContext加载时,BookDAOImp的构造器不会调用
+        只有ctx.getBean()执行后,BookDAOImp的构造器会调用-->
+    <bean id="BookDao" class="com.joey.dao.Imp.BookDAOImpl" lazy-init="true"/>
+</beans>

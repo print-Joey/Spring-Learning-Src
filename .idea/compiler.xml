@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="S1_IOC_QuickStart" />
+        <module name="S7_Intro_autowire" />
+        <module name="S18_AOP-QuickStart" />
+        <module name="S10_Container" />
+        <module name="S14_AnnotationThirdPartyBeanManager" />
+        <module name="S12_AnnotationBeanManager" />
+        <module name="S24_CsBankTransaction" />
+        <module name="S18_1_AOP-Workflow" />
+        <module name="S8_DI_Collection" />
+        <module name="S11_AnnotationBean" />
+        <module name="S15_Spring_MyBatis" />
+        <module name="S6_DI_Constructor" />
+        <module name="S9_DataSource" />
+        <module name="S21_AOP_Spring_MyBatis_Efficiency" />
+        <module name="S25_BankTransactionProperties" />
+        <module name="S20_AOPAdviceType" />
+        <module name="S13_AnnotationDI" />
+        <module name="S16_Spring_JUnit" />
+        <module name="S4_Bean_Lifecycle" />
+        <module name="S5_DI_Set" />
+        <module name="S22_AOPAdviceGetData" />
+        <module name="S19_AOP-PointCutExpression" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

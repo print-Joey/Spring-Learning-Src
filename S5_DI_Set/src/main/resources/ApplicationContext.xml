@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDAO"  class="com.joey.dao.Imp.BookDAOImpl" >
+        <!--        setter注入原始类型  setter inject primitive variable    value标签提供初始值-->
+        <property name="dataSource" value="mysql" />
+        <property name="connectionNum" value="100"/>
+    </bean>
+
+
+    <!--        setter注入引用类型  setter inject reference variable    给ref标签提供值-->
+    <bean id="userDao" class="com.joey.dao.Imp.UserDaoImpl" />
+
+
+
+    <bean id="bookService" class="com.joey.service.Imp.BookServiceImpl">
+<!--        setter注入引用类型  setter inject reference variable-->
+        <property name="bookDAO" ref="bookDAO"/>
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+
+</beans>
